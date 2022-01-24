@@ -1,0 +1,51 @@
+.dashSidebar {
+    height: 100%;
+    width: 15%;
+    background-color: #fdfbfb;
+}
+.dashsidebarList {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.dashsidebarList .row {
+    width: 100%;
+    height: 50px;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #444;
+    cursor: pointer;
+}
+.dashsidebarList .row:hover {
+    background-color: #444;
+    color: white;
+}
+.dashsidebarList #active{ 
+    background-color: #444;
+    color: white;
+}
+.row #icon {
+    flex:30%;
+    display: grid;
+    place-items: center;
+}
+.row #title {
+    flex:70%;
+}
+
+
+@media screen and (max-width: 600px) { 
+    .row #title {
+        display: none;
+    }
+    .row #icon {
+        flex:100%;
+    }
+    .dashSidebar {
+        width: 15%;
+    }
+}

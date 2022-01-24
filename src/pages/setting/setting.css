@@ -1,0 +1,145 @@
+:root{
+    --main:#3933b7;
+    --secondry:#508dd3;
+    --gradient:linear-gradient(120deg, var(--main), var(--secondry));
+}
+.setting {
+    display: flex;
+}
+
+.settingWrapper {
+    flex : 9;
+    padding: 20px;
+}
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.wrapper {
+    width: 40%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 15px;
+    background-color: #fdfbfb;
+}
+.wrapper form {
+    width: 70%;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.wrapper form .inputBox{
+  position: relative;
+  padding-top: 10px;
+}
+
+.wrapper form .inputBox label{
+  position: relative;
+  top: 3px;
+}
+
+
+.wrapper form .inputBox input ,select{
+  width:100%;
+  border: 1px dashed #666;
+  height: 25px;
+  border-radius: 5px;
+  background:none;
+  color:#666;
+  font-size: 15px;
+  
+  text-transform: none;
+}
+
+
+.wrapper form .inputBox label{
+  font-size: 16px;
+  color:#666;
+  transition: .2s linear;
+}
+
+#custom-file-upload {
+    border:2px dashed #666;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    width: 93%;
+    text-align: center;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#file-upload {
+    display: none;
+}
+
+
+.btnReverse{
+    background-color: var(--main);
+    margin: 10px;
+    padding: 10px;
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+    margin-left: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all .3s linear;
+    font-size: 15px;
+  }
+  .btnReverse:hover{
+    transform: scale(1.1);
+  }
+
+  .settingProfileImage {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      align-self: center;
+      justify-self: center;
+
+  }
+
+  .settingsTitleDelete {
+        background-color: rgb(236, 89, 89);
+        padding: 10px;
+        border-radius: 5px;
+        color: white;
+        margin-left: 10px;
+        text-align: center;
+        cursor: pointer;
+        font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .settingsTitleUpdate {
+        background-color: rgb(66, 151, 66);
+        padding: 10px;
+        border-radius: 5px;
+        color: white;
+        margin-left: 10px;
+        text-align: center;
+        cursor: pointer;
+        font-family: Arial, Helvetica, sans-serif;
+  }
+
+  @media screen and (max-width: 600px) {
+    .wrapper {
+        width: 90%;
+    }
+ }
