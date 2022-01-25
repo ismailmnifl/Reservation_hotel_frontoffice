@@ -1,6 +1,6 @@
 import './login.css';
 import loginImage from '../../addOns/images/loginBackImage.jpeg';
-import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+
 
 
 export default function Login() {
@@ -14,7 +14,7 @@ export default function Login() {
                 <input className="loginInput" type="password" placeholder="Enter your password..." />
                 <button className="loginButton">Login</button>
             </form>
-            <button className="loginRegisterButton"><Link to="/register" className="link">Register</Link></button>
+            <button className="loginRegisterButton"></button>
         </div>
     );
 }

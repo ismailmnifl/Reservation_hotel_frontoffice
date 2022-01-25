@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+import { Link } from 'react-router-dom';
 import './register.css';
 
 export default function Register() {
@@ -21,7 +21,7 @@ export default function Register() {
         <input className="registerInput" type="text" placeholder="Enter your Adresse..." />
         <button className="registerButton">Register</button>
       </form>
-        <button className="registerLoginButton"><Link to="/login" className="link">Login</Link></button>
+        <button className="registerLoginButton"></button>
       </div>
   );
 }
