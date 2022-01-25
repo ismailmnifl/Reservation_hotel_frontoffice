@@ -9,26 +9,26 @@ export const SidebarData = [
     {
         title: "Pensions",
         icon: <i className="fas fa-pizza-slice"></i>,
-        link: "/pensions"
+        link: "/dashboard/pensions"
     },
     {
         title: "Accommodations",
         icon: <i className="fas fa-building"></i>,
-        link: "/accommodations"
+        link: "/dashboard/accommodations"
     },
     {
         title: "Users",
         icon: <i className="fas fa-users"></i>,
-        link: "/users"
+        link: "/dashboard/users"
     },
     {
         title: "Reservations",
         icon: <i className="fas fa-ticket-alt"></i>,
-        link: "/reservations"
+        link: "/dashboard/reservations"
     },
     {
         title: "Roles",
         icon: <i className="fas fa-user-tag"></i>,
-        link: "/roles"
+        link: "/dashboard/roles"
     },
 ]
