@@ -4,6 +4,8 @@ import Dashboard from "./pages/Dashboard/Dashboard";
 import Setting from "./pages/setting/Setting";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
+import Reservation from "./pages/Reservation/Reservation";
+
 
 /* nested route components */
 
@@ -24,7 +26,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
 
-
         <Route path="/login" element={user ? <Home /> : <Login />} />
 
         <Route path="/register" element={user ? <Home /> : <Register />} />
@@ -40,6 +41,7 @@ function App() {
         </Route>
 
         <Route path="/setting" element={user ? <Setting /> : <Login />} />
+        <Route path="/reservations" element={user ? <Reservation/> : <Login />} />
 
 
       </Routes>
@@ -49,23 +51,3 @@ function App() {
 }
 
 export default App;
-
-
-{/* <Router>
-              <Topbar/>
-              <Routes>
-              <Route path="/" element={<Home/>}/>
-                
-             
-              <Route path="/login" element={user ? <Home/> : <Login/>}>
-              
-
-              
-              <Route path="/register" element={user ? <Home/> : <Register/>}>
-                
-              <Route path="/dashboard" element={user ? <Dashboard/> : <Login/>}>
-              
-              <Route path="/setting" element={user ? <Setting/> : <Login/>}>
-              
-              </Routes>
-            </Router> */}

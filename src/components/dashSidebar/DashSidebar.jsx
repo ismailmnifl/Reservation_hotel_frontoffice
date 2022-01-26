@@ -10,7 +10,7 @@ export default function DashSidebar() {
     return (
         <div className="dashSidebar">
             <ul className="dashsidebarList">
-                <div className="row">
+            <div className="row">
                     <div id='icon'><i className="fas fa-pizza-slice" /></div>
                     <div id='title'><NavLink className="link" to="/dashboard/pensions">Pensions</NavLink></div>
                 </div>

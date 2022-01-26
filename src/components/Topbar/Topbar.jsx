@@ -30,6 +30,9 @@ export default function Topbar() {
                         <Link to="/setting" className="link">Setting</Link>
                     </li>
                     <li className="topListItem">
+                        <Link to="/reservations" className="link">Reservation</Link>
+                    </li>
+                    <li className="topListItem">
                         {user && "LOGOUT"}
                     </li>
 

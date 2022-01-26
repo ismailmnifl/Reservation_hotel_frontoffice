@@ -1,7 +1,7 @@
 .dashSidebar {
-    height: 100%;
+    height: auto;
     width: 15%;
-    background-color: #fdfbfb;
+    background-color: #95a5a6;
 }
 .dashsidebarList {
     width: 100%;
@@ -20,12 +20,14 @@
     align-items: center;
     color: #444;
     cursor: pointer;
+    margin:0;
 }
 .dashsidebarList .row:hover {
-    background-color: #444;
-    color: white;
+    background-color: white;
+    color: #444;
 }
-.dashsidebarList #active{ 
+
+.active .row { 
     background-color: #444;
     color: white;
 }

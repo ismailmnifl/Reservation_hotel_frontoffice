@@ -1,7 +1,12 @@
 import { Link } from 'react-router-dom';
 import './register.css';
+import {useNavigate } from "react-router-dom";
+
 
 export default function Register() {
+
+  let navigate = useNavigate();
+
   return (
       <div className="register">
            <span className="registerTitle">Register</span>
@@ -21,7 +26,9 @@ export default function Register() {
         <input className="registerInput" type="text" placeholder="Enter your Adresse..." />
         <button className="registerButton">Register</button>
       </form>
-        <button className="registerLoginButton"></button>
+        <button className="registerLoginButton" onClick={()=> {
+            navigate("/login");
+        }}>Login</button>
       </div>
   );
 }

@@ -1,9 +1,12 @@
 import './login.css';
 import loginImage from '../../addOns/images/loginBackImage.jpeg';
+import { useNavigate } from "react-router-dom";
+
 
 
 
 export default function Login() {
+    let navigate = useNavigate();
     return (
         <div className="login">
             <span className="loginTitle">Login</span>
@@ -14,7 +17,9 @@ export default function Login() {
                 <input className="loginInput" type="password" placeholder="Enter your password..." />
                 <button className="loginButton">Login</button>
             </form>
-            <button className="loginRegisterButton"></button>
+            <button className="loginRegisterButton" onClick={()=>{
+                navigate("/register")
+            }}>Register</button>
         </div>
     );
 }
