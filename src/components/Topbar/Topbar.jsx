@@ -3,9 +3,6 @@ import ProfileImage from '../../addOns/images/profile.png';
 import { Link } from "react-router-dom";
 
 
-
-
-
 export default function Topbar() {
     const user = false;
     return (
@@ -27,11 +24,9 @@ export default function Topbar() {
                         <Link to="/dashboard" className="link">Dashboard</Link>
                     </li>
                     <li className="topListItem">
-                        <Link to="/setting" className="link">Setting</Link>
-                    </li>
-                    <li className="topListItem">
                         <Link to="/reservations" className="link">Reservation</Link>
                     </li>
+                    
                     <li className="topListItem">
                         {user && "LOGOUT"}
                     </li>

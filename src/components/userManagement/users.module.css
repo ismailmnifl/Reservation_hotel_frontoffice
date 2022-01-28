@@ -29,7 +29,7 @@ h2 small {
     font-size: 0.5em;
 }
 .responsiveTable {
-    width: 70%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,13 +76,16 @@ h2 small {
     flex-basis: 20%;
 }
 .responsiveTable .col4 {
-    flex-basis: 15%;
+    flex-basis: 20%;
 }
 .responsiveTable .col5 {
     flex-basis: 10%;
 }
 .responsiveTable .col6 {
     flex-basis: 20%;
+}
+.responsiveTable .col7 {
+    flex-basis: 10%;
 }
 @media all and (max-width: 767px) {
     .responsiveTable .tableHeader {
@@ -111,4 +114,16 @@ h2 small {
     align-items: center;
     justify-content: space-between;
     width: 75%;
+}
+
+.col7 i {
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.col7 .fa-trash {
+    color: rgb(199, 69, 69);
+}
+.col7 .fa-pen-square {
+    color: rgb(60, 141, 60);
 }

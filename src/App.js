@@ -1,7 +1,6 @@
 import Topbar from "./components/Topbar/Topbar";
 import Home from "../src/pages/Home/Home";
 import Dashboard from "./pages/Dashboard/Dashboard";
-import Setting from "./pages/setting/Setting";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
 import Reservation from "./pages/Reservation/Reservation";
@@ -16,6 +15,7 @@ import User from './components/userManagement/Users';
 import Accommodations from './components/accommodationManagement/Accommodations';
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import AddNewUser from "./components/addNewUser/AddNewUser";
 
 
 function App() {
@@ -37,10 +37,10 @@ function App() {
               <Route path="reservations" element={<Reservations />} />
               <Route path="roles" element={<Roles />} />
               <Route path="accommodations" element={<Accommodations />} />
+              <Route path="addNewUser" element={<AddNewUser/>} />
 
         </Route>
 
-        <Route path="/setting" element={user ? <Setting /> : <Login />} />
         <Route path="/reservations" element={user ? <Reservation/> : <Login />} />
 
 
